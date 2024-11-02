@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Movimiento Rectilíneo Uniforme (MRU)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de Movimiento Rectilíneo Uniforme (MRU)</h1>
+        <p class="mnemonic">
+            <strong>Técnica:</strong> "Don Viajero Tiene una misión."
+        </p>
+        <p class="mnemonic-exp">
+            <strong>Explicación:</strong><br>
+            <ul>
+                <li><strong>Don:</strong> D (Don) representa la distancia,</li>
+                <li><strong>Viajero:</strong> V (Viajero) representa la velocidad,</li>
+                <li><strong>Tiene:</strong> T (Tiene) representa el tiempo.</li>
+                           </ul>
+        </p>
+        <div class="game-container">
+            <div class="track">
+                <img id="car" src="car.png" alt="Carro" class="car">
+                <img src="track.jpg" alt="Pista" class="track-img">
+            </div>
+            <div class="question-container">
+                <h2 id="question"></h2>
+                <div id="answers"></div>
+            </div>
+        </div>
+        <div id="result" class="hidden"></div>
+        <div id="scoreboard" class="hidden"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+.mnemonic, .mnemonic-exp {
+    margin: 20px auto;
+    font-size: 1.2em;
+    max-width: 800px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.track {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.track-img {
+    width: 100%;
+}
+
+.car {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 180px;
+}
+
+.question-container {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+#answers button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#answers button:hover {
+    background-color: #2980b9;
+}
+
+.hidden {
+    display: none;
+}
+
+#result, #scoreboard {
+    margin-top: 30px;
+}
+
+#scoreboard {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    .mnemonic, .mnemonic-exp {
+        font-size: 1em;
+    }
+    .car {
+        width: 20%; /* Ajusta el tamaño del carro en relación a la pantalla */
+    }
+    #answers button {
+        font-size: 1em;
+        padding: 15px 25px; /* Mayor área de toque para facilidad en móviles */
+    }
+    .track {
+        width: 100%; /* Asegura que la pista ocupe el ancho de la pantalla */
+    }
+}
+
