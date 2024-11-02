@@ -100,4 +100,10 @@ h2 {
         width: 100%; /* Asegura que la pista ocupe el ancho de la pantalla */
     }
 }
+.mnemonic img {
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    height: auto;
+}
 
